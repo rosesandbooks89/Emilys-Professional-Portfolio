@@ -1,0 +1,359 @@
+/* Sets root variables so I can easily change these values */
+:root {
+    --dark: #31343D;
+    --dark-purple: #592a5a94;
+    --black: #000000;
+    --green: #468404;
+    --dark-teal: #10888c;
+  }
+  
+
+/* Sets font so rem and px are relative, easier to keep track of size */
+html {
+    font-size: 62.5%;
+}
+
+/* Body of page background color set */
+body {
+    background-color: var(--dark-purple);
+    font-family:sans-serif, Arial, Helvetica, sans-serif, monospace;
+    
+}
+
+/* sets header anchor color to dark on mobile, only way I could get the text decoration to leave was setting the anchor color on top */
+.head-color a {
+    color:var(--dark);
+}
+
+/* footer anchor color */
+.foot-color a {
+    color: var(--dark-teal);
+}
+
+/* h1 font size/color */
+h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+/* creates flex column in header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--dark);
+}
+
+/* class in nav that changes font size in mobile */
+.header-links {
+    font-size: 3rem;
+}
+
+/* ul in header is set to flex-wrap so li can change from 2 columns in mobile to 1 row on desktop */
+.header-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex properties and css for li in header, creates border and box styles*/
+.header-links li {
+    flex:1 1 40%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-image: linear-gradient(var(--green),var(--black));
+    border-radius: 10px;
+    margin:.5rem;
+    border-color: var(--dark-teal);
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* ALL list items are set to blue, for 2 unanchored items in footer list */
+li {
+    color: var(--dark-teal);
+}
+
+/* image banner for top of page */
+.stock img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* all h2 text center for mobile and font size/color */
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--dark);
+}
+
+/* all h3 center with box styling(padding) */
+h3 {
+    text-align: center;
+    padding:1rem;
+    font-size:3rem;
+    color: var(--dark);
+}
+
+/* all p styled and box styled */
+p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color:white;
+    padding: 1rem;
+}
+
+/* creates top margin id for each section on main, About, work, contact */
+#top {
+    margin-top: 1rem;
+}
+
+/* creats flex grid row and wrap for work section */
+.row-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* creates flex grid row in footer */
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* creates flex grid column/wrap for About image and p */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* flex container properties for about section */
+.me-container {
+    flex: 1 1;
+    align-items: center;
+}
+
+/* about image centered with style properties */
+.me-container img {
+    width: 36rem;
+    align-items: center;
+    border: solid var(--black);
+    border-radius: 15px;
+    box-shadow: 3px 4px 8px 6px var(--dark);
+    margin: 1rem;
+}
+
+/* container for work section */
+.container {
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container for each card in work container */
+.card-container{
+    flex: 1 1 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* work card flex with style */
+.card {
+    display:flex;
+    border: solid var(--dark);
+    border-width: 0.5rem;
+    border-radius: 21px;
+}
+
+/* work image flex properties */
+.card img {
+    width: 19rem;
+    flex: 1 1;
+    border-radius: 15px;
+}
+
+/* makes first card priority, placed on top and centered with flex properties */
+.active {
+    order: -1;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+
+/* flex properties for footer */
+.footer-flex {
+    flex: 1 1;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* text style/alignment for footer links */
+.footer-text {
+    text-align: center;
+    align-items: center;
+    padding:1rem;
+    font-size: 1.5rem
+}
+
+/* padding for about */
+.padding-am {
+    padding:1rem
+}
+
+/* margin on all sections */
+.margin-all {
+    margin: 5rem 0;
+}
+
+/* on hover each card gets yellow shadow */
+.card:hover {
+    box-shadow: 0px 0px 15px var(--black), 0 0 15px var(--black);
+} 
+
+/* on active each card gets blue shadow */
+.card:active {
+    box-shadow: 0px 0px 15px var(--dark-teal), 0 0 15px var(--dark-teal);
+} 
+
+/* on mobile each card gets inset shadow*/
+.header-links li:active {
+    box-shadow: inset 0px 0px 15px var(--dark), 0 0 15px var(--dark);
+}
+
+/* class to center */
+.center {
+    justify-content: center;
+}
+
+
+/* media query for tablets */
+@media screen and (min-width: 768px) {
+    
+    /* changes header link color to black */
+    .head-color a {
+        color: var(--black);
+    }
+
+    /* on tablet/desktop header seperates to both ends */
+    header {
+        padding-left: 0;
+        justify-content: space-between;
+    }
+
+    /* h1 style for tablet/desktop */
+    h1 {
+        background-color: var(--dark-teal);
+        padding: 1rem 1rem 1rem 7.5rem;
+        font-size: 4.4rem;
+        color: var(--dark);
+        border-radius: 0 8px 8px 0;
+    }
+
+    /* flex grid changed to row */
+    .header-links ul,
+    header {
+        flex-direction: row; 
+    }
+
+    /* flex properties for li in header */
+    .header-links li {
+        flex: 1 1;
+        font-size: 2rem;
+        border-width: 0;
+        /* background-color: #31343D; */
+        background-image: none;
+    }
+
+    /* container set so grid can now have two cards */
+    .container {
+        flex: 1 1;
+        min-width: 50%;
+    }
+
+    /* card flex properties */
+    .card-container{
+        flex: 1 1 50%;
+        min-width: 50%;
+        padding: 3%;
+    }
+
+    /* flex class */
+    .flex {
+        display: flex;
+    }
+    
+    /* line for about me */
+    .line-am {
+        border-right: solid var(--dark);
+        padding: 2.76rem;
+    }
+    
+    /* line for work */
+    .line-work {
+        border-right: solid var(--dark);
+        padding:6.91rem;
+    }
+    
+    /* line got contact */
+    .line-cm {
+        border-right: solid var(--dark);
+        padding:1.1rem;
+    }
+    
+    /* work flex grid now centers */
+    .row-work {
+        justify-content: center;
+    }
+    
+    /* stops shadow on header list, hover color change*/
+    .header-links li:hover {
+        box-shadow: none;
+    }
+    
+    /* stops shadow on header list */
+    .header-links li:active {
+        box-shadow: none;
+    }
+    
+}
+
+/* desktop media query */
+@media screen and (min-width: 992px) {
+    
+    /* flex set to row */
+    .header-links ul,
+    header {
+        flex-direction: row; 
+    }
+    
+    /* flex properties */
+    .header-links li {
+        flex: 1 1;
+        font-size: 2rem;
+    }
+
+    /* container set to hold two cards */
+    .container {
+        flex: 1 1 50%;
+        min-width: 50%;
+    }
+
+    /* each card flex properties */
+    .card-container{
+        flex: 1 1 50%;
+        min-width: 50%;
+        max-width: 100rem;
+        padding:3%;
+        justify-content: center;
+    }
+}
