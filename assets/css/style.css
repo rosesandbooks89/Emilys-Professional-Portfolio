@@ -165,6 +165,7 @@ p {
     flex: 1 1 100%;
     padding: 1rem;
     margin: 0 auto;
+    text-align: center;
 }
 /* container for each aside in about me container */
 .a-card-container{
@@ -180,12 +181,11 @@ p {
     border-width: 0.5rem;
     border-radius: 21px;
 }
-/* about me card flex with style */
-.a-card {
-    display:flex;
-    border: solid var(--dark);
-    border-width: 0.5rem;
-    border-radius: 21px;
+/* makes first card priority, placed on top and centered with flex properties */
+.active {
+    order: -1;
+    flex: 1 1 100%;
+    justify-content: center;
 }
 
 /* work image flex properties */
@@ -204,6 +204,9 @@ p {
     border-radius: 15px;
     max-height: 200px;
     object-fit: cover;
+    border: solid var(--dark);
+    border-width: 0.5rem;
+
 }
 
 /* flex properties for footer */
@@ -237,8 +240,8 @@ p {
     box-shadow: 0px 0px 15px var(--black), 0 0 15px var(--black);
 } 
 /* on hover each about me card image gets black shadow */
-.a-card:hover {
-    box-shadow: 15px 015px 15px var(--black), 0 0 15px var(--black);
+.a-card img:hover {
+    box-shadow: 0px 0px 0px var(--black), 0 0 15px var(--black);
 } 
 
 /* class to center */
