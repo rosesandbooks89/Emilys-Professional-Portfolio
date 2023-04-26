@@ -1,6 +1,6 @@
 /* Sets root variables so I can easily change these values */
 :root {
-    --dark: #31343D;
+    --dark: #000000;
     --dark-purple: #371a38d1;
     --black: #000000;
     --dark-teal: #10888c;
@@ -32,7 +32,6 @@ body {
 /* text for about me section */
 #textContainer{
     padding: 8%;
-    background: repeating-radial-gradient()
 }
 
 /* h1 font size/color */
@@ -47,7 +46,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2%;
-    background-color: var(--dark);
+    background-color: var(--black);
 }
 
 /* class in nav that changes font size in mobile */
@@ -67,7 +66,6 @@ header {
     text-align: center;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    background-image: linear-gradient(var(--black),var(--dark-purple));
     border-radius: 10px;
     margin:.5rem;
     border-color: var(--dark-teal);
@@ -75,10 +73,11 @@ header {
     border-width: 2px;
 }
 
-/* ALL list items are set to dark-teal, for 2 unanchored items in footer list */
+/* ALL list items are set to dark with a dark teal shadow, for 2 unanchored items in footer list */
 li {
     color: var(--dark);
-    font-size: 16px;
+    font-size: 1rem;
+    text-shadow: 2px 2px 5px white;
 }
 
 /* image banner for top of page */
@@ -94,15 +93,18 @@ li {
 h2 {
     text-align: center;
     font-size: 4rem;
-    color: var(--dark);
+    color: var(--black);
+    text-shadow: 2px 2px 5px white;
 }
 
 /* all h3 center with box styling(padding) */
 h3 {
     text-align: center;
     padding:1rem;
-    font-size:3rem;
-    color: var(--dark);
+    font-size:4rem;
+    color: var(--black);
+    text-shadow: 2px 2px 5px white;
+    
 }
 
 /* all p styled and box styled */
@@ -262,7 +264,6 @@ p {
     /* changes header link color to black */
     .head-color a {
         color: white;
-        text-shadow: 2px 2px 5px var(--dark-teal);
     }
 
     /* on tablet/desktop header seperates to both ends */
@@ -276,7 +277,7 @@ p {
         background-color: var(--dark-teal);
         padding: 1rem 1rem 1rem 7.5rem;
         font-size: 4.4rem;
-        color: var(--dark);
+        color: var(--black);
         border-radius: 0 8px 8px 0;
     }
 

@@ -23,5 +23,10 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Link to Deployed Application
-<a herf="https://rosesandbooks89.github.io/Emilys-Professional-Portfolio/" target="blank"> Link to live Application</a>
+
+Click [here](https://rosesandbooks89.github.io/Emilys-Professional-Portfolio/) to go  live Application
+
 ## Screenshots
+![alt text](./assets/images/screenshot3%20(2).png)
+![alt text](./assets/images/screenshot3%20(3).png)
+![alt text](./assets/images/screenshot3%20(1).png)
