@@ -1,9 +1,8 @@
 /* Sets root variables so I can easily change these values */
 :root {
     --dark: #31343D;
-    --dark-purple: #592a5a94;
+    --dark-purple: #371a38d1;
     --black: #000000;
-    --green: #468404;
     --dark-teal: #10888c;
   }
   
@@ -20,14 +19,20 @@ body {
     
 }
 
-/* sets header anchor color to dark on mobile, only way I could get the text decoration to leave was setting the anchor color on top */
+/* sets header anchor color to dark on mobile, only way I could get the text decoration to leave was setting the anchor color on top
 .head-color a {
-    color: white;
-}
+    color: white
+} */
 
 /* footer anchor color */
 .foot-color a {
     color: var(--dark);
+}
+
+/* text for about me section */
+#textContainer{
+    padding: 8%;
+    background: repeating-radial-gradient()
 }
 
 /* h1 font size/color */
@@ -257,6 +262,7 @@ p {
     /* changes header link color to black */
     .head-color a {
         color: white;
+        text-shadow: 2px 2px 5px var(--dark-teal);
     }
 
     /* on tablet/desktop header seperates to both ends */

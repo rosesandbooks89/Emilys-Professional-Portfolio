@@ -1,13 +1,11 @@
-Challengeweek2CSS
-Proffesional Developer Portfolio
+# Proffesional Developer Portfolio
+
+## Description
 This portfolio web applications aim is to display the information and project for my web development work, which I will add to as I complete further project.
 it enables visitors to contact me learn about my skill set and see project I've worked on.
 I learnt the how to apply CSS grid, how to use media queries and language.
 
-
-
-
-Acceptance Criteria
+## Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 GIVEN I need to sample a potential employee's previous work
@@ -23,3 +21,7 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+## Link to Deployed Application
+<a herf="https://rosesandbooks89.github.io/Emilys-Professional-Portfolio/" target="blank"> Link to live Application</a>
+## Screenshots
