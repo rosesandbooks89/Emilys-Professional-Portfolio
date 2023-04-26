@@ -27,7 +27,7 @@ body {
 
 /* footer anchor color */
 .foot-color a {
-    color: var(--dark-teal);
+    color: var(--dark);
 }
 
 /* h1 font size/color */
@@ -72,7 +72,8 @@ header {
 
 /* ALL list items are set to dark-teal, for 2 unanchored items in footer list */
 li {
-    color: var(--dark-teal);
+    color: var(--dark);
+    font-size: 16px;
 }
 
 /* image banner for top of page */
@@ -222,7 +223,7 @@ p {
     text-align: center;
     align-items: center;
     padding:1rem;
-    font-size: 1.5rem
+    font-size: 3rem
 }
 
 /* padding for about */
