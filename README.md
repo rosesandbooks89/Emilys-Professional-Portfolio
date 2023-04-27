@@ -1,9 +1,9 @@
-# Proffesional Developer Portfolio
+# Profesional Developer Portfolio
 
 ## Description
-This portfolio web applications aim is to display the information and project for my web development work, which I will add to as I complete further project.
-it enables visitors to contact me learn about my skill set and see project I've worked on.
-I learnt the how to apply CSS grid, how to use media queries and language.
+This portfolio web applications aim is to display the information and project for my web development work, which I will add to as I complete further projects.
+it enables visitors to contact me learn about my skill set and see projects I've worked on.
+I learned how to apply CSS grid, and how to use media queries and language.
 
 ## Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
