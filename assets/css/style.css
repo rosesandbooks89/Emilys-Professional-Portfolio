@@ -19,10 +19,11 @@ body {
     
 }
 
-/* sets header anchor color to dark on mobile, only way I could get the text decoration to leave was setting the anchor color on top
+/* sets header anchor color to white on mobile, only way I could get the text decoration to leave was setting the anchor color on top */
 .head-color a {
-    color: white
-} */
+    color: white;
+    font-size: 2rem;
+}
 
 /* footer anchor color */
 .foot-color a {
@@ -73,7 +74,7 @@ header {
     border-width: 2px;
 }
 
-/* ALL list items are set to dark with a dark teal shadow, for 2 unanchored items in footer list */
+/* ALL list items are set to dark with a white shadow, for 2 unanchored items in footer list */
 li {
     color: var(--dark);
     font-size: 1rem;
@@ -95,6 +96,7 @@ h2 {
     font-size: 4rem;
     color: var(--black);
     text-shadow: 2px 2px 5px white;
+    
 }
 
 /* all h3 center with box styling(padding) */
@@ -261,7 +263,7 @@ p {
 /* media query for tablets */
 @media screen and (min-width: 768px) {
     
-    /* changes header link color to black */
+    /* changes header link color to white */
     .head-color a {
         color: white;
     }
